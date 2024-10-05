@@ -1,21 +1,22 @@
 export default class Building {
-    constructor(sqft) {
-        this._sqft = sqft;
-    }
+  constructor(sqft) {
+    this._sqft = sqft;
+  }
 
-    get sqft() {
-        return this._sqft;
-    }
+  get sqft() {
+    return this._sqft;
+  }
 
-    set sqft(newSqft) {
-        if (typeof newSqft === 'number') {
-            this._sqft = newSqft;
-        } else {
-            throw new TypeError('Sqft must be a number.');
-        }
+  set sqft(newSqft) {
+    if (typeof newSqft === 'number') {
+      this._sqft = newSqft;
+    } else {
+      throw new TypeError('Sqft must be a number.');
     }
+  }
 
-    evacuationWarningMessage() {
-        throw new Error('Class extending Building must override evacuationWarningMessage');
-    }
+  // eslint-disable-next-line class-methods-use-this
+  evacuationWarningMessage() {
+    throw new Error('Class extending Building must override evacuationWarningMessage');
+  }
 }
