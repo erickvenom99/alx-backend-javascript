@@ -1,7 +1,7 @@
 // Running test with Hooks
-const sinon = require('sinon');
-const { expect } = require('chai');
-const sendPaymentRequestToApi = require('./5-payment');
+import sinon from 'sinon';
+import { expect } from 'chai';
+import sendPaymentRequestToApi from './5-payment.js';
 
 describe('sendPaymentRequestToApi', () => {
   let consoleSpy;
@@ -26,4 +26,3 @@ describe('sendPaymentRequestToApi', () => {
     expect(consoleSpy.calledWith('The total is: 20')).to.be.true;
   });
 });
-

@@ -1,7 +1,7 @@
-const sinon = require('sinon');
-const { expect } = require('chai');
-const Utils = require('./utils');
-const sendPaymentRequestToApi = require('./4-payment');
+import sinon from 'sinon';
+import { expect } from 'chai';
+import Utils from './utils.js';
+import sendPaymentRequestToApi from './4-payment.js';
 
 describe('sendPaymentRequestToApi', () => {
   it('should stub Utils.calculateNumber to return 10', () => {

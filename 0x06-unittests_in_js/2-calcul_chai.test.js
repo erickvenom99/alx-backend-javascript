@@ -1,5 +1,5 @@
-const { expect } = require('chai');
-const calculateNumber = require('./2-calcul_chai');
+import { expect } from 'chai';
+import calculateNumber from './2-calcul_chai.js';
 
 describe('calculateNumber', () => {
   describe('SUM', () => {
@@ -9,8 +9,8 @@ describe('calculateNumber', () => {
     it('should return 5 when adding 1 and 4.2', () => {
       expect(calculateNumber('SUM', 1, 4.2)).to.equal(5);
     });
-    it('should return 7 when adding 4.4 and 2.2', () => {
-      expect(calculateNumber('SUM', 4.4, 2.2)).to.equal(7);
+    it('should return 6 when adding 4.4 and 2.2', () => {
+      expect(calculateNumber('SUM', 4.4, 2.2)).to.equal(6);
     });
     it('should return 6 when adding 4.3 and 2.1', () => {
       expect(calculateNumber('SUM', 4.3, 2.1)).to.equal(6);

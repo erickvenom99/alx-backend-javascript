@@ -10,7 +10,7 @@ describe('calculateNumber', () => {
       assert.strictEqual(calculateNumber('SUM', 1, 4.2), 5);
     });
     it('should return 7 when adding 4.4 and 2.2', () => {
-      assert.strictEqual(calculateNumber('SUM', 4.4, 2.2), 7);
+      assert.strictEqual(calculateNumber('SUM', 4.4, 2.2), 6);
     });
     it('should return 6 when adding 4.3 and 2.1', () => {
       assert.strictEqual(calculateNumber('SUM', 4.3, 2.1), 6);

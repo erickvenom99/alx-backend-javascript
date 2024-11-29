@@ -1,7 +1,7 @@
 // 1-calcul.js
 const calculateNumber = (type, a, b) => {
-  const roundedA = Math.round(a);
-  const roundedB = Math.round(b);
+const roundedA = Math.round(a);
+const roundedB = Math.round(b);
 
   if (type === 'SUM') {
     return roundedA + roundedB;
@@ -17,4 +17,4 @@ const calculateNumber = (type, a, b) => {
   }
 };
 
-module.exports = calculateNumber;
+export default calculateNumber;
