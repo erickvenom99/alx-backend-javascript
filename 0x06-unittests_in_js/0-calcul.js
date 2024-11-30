@@ -1,13 +1,8 @@
-#!/usr/bin/node
-/**
- * Module sum two numbers
- * arg a: the first argument
- * arg b: the second argument
- */
-const calculateNumber = (a, b = 0) => {
-  const intA = a >= 0 ? Math.round(a) : Math.floor(a);
-  const intB = b >= 0 ? Math.round(b) : Math.floor(b);
-  return intA + intB;
-};
-
-module.exports = calculateNumber;
+module.exports = function calculateNumbers(a, b = 0) {
+    const intA = Number(a);
+    const intB = Number(b);
+    if (Number.isNaN(intA) || Number.isNaN(intB)) {
+        throw new TypeError('Both arguments must be numbers');
+    }
+    return Math.round(intA) + Math.round(intB);
+}
