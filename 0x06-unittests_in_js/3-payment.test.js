@@ -9,7 +9,7 @@ describe('sendPaymentRequestToApi', () => {
     sendPaymentRequestToApi(100, 20);
     expect(sumSpy.calledWith('SUM', 100, 20)).to.be.true;
     expect(sumSpy.calledWithExactly('SUM', 100, 20)).to.be.true;
-    expect(sumSpy.returnValues[0]).to.equal(120);
+    expect(sumSpy.returnValues[0]).to.be.equal(120);
     sumSpy.restore();
   });
 
