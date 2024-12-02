@@ -9,7 +9,7 @@ const calculateNumber = (type, a, b) => {
       throw new Error('Invalid type. Supported types are SUM.');
   }
 };
-
-export default {
-  calculateNumber,
+const Utils = {
+  calculateNumber
 };
+module.exports = Utils;
